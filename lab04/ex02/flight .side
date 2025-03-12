@@ -1,0 +1,75 @@
+{
+  "id": "7906a63c-b67c-4a20-90df-2a673ac8d3af",
+  "version": "2.0",
+  "name": "flight ",
+  "url": "https://blazedemo.com",
+  "tests": [{
+    "id": "1c0947ba-fe4c-47ba-8f2e-47f0dddd65a9",
+    "name": "buyflight",
+    "commands": [{
+      "id": "30945844-1718-4ce0-ae68-e52f75680ff1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28a4a39f-cc06-4352-b8f8-c3bfb5f17bb9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07a97ced-459a-405b-b643-b359563a4c64",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Find Flights']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "893fc715-aa05-401d-8faf-e3abf7d7f314",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn",
+      "targets": [
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=(//input[@value='Choose This Flight'])[2]", "xpath:attributes"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51430179-60d8-4f48-911f-63423638689e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Purchase Flight']", "xpath:attributes"],
+        ["xpath=//div[11]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf39d86e-cf88-439f-9a0e-4fc2c55f3177",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "",
+      "targets": [],
+      "value": "BlazeDemo Confirmation"
+    }]
+  }],
+  "suites": [{
+    "id": "05d22d6b-9737-486e-8f9a-c421984f4fb8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1c0947ba-fe4c-47ba-8f2e-47f0dddd65a9"]
+  }],
+  "urls": ["https://blazedemo.com/"],
+  "plugins": []
+}

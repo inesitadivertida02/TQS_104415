@@ -1,0 +1,82 @@
+{
+  "id": "8e484cc0-9071-4fac-86e9-3fc99d53b160",
+  "version": "2.0",
+  "name": "harry potter ",
+  "url": "https://cover-bookstore.onrender.com",
+  "tests": [{
+    "id": "ed863809-5e6d-4bcf-bb07-a995082d64cc",
+    "name": "harry potter search",
+    "commands": [{
+      "id": "c4b2ffa3-50a3-445c-af2f-ed69624d7d76",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bf8d42f-d600-4173-9867-21f91befe36f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x817",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35693232-f3ae-4de3-aebf-e9424fe49c53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Navbar_searchBarContainer__3UbnF .Navbar_searchBarInput__w8FwI",
+      "targets": [
+        ["css=.Navbar_searchBarContainer__3UbnF .Navbar_searchBarInput__w8FwI", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebc0dc98-2bdd-49f9-bdc4-dce7101de723",
+      "comment": "",
+      "command": "type",
+      "target": "css=.Navbar_searchBarContainer__3UbnF .Navbar_searchBarInput__w8FwI",
+      "targets": [
+        ["css=.Navbar_searchBarContainer__3UbnF .Navbar_searchBarInput__w8FwI", "css:finder"],
+        ["xpath=//input[@value='harry potter']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "harry potter"
+    }, {
+      "id": "74efa054-adae-4ad3-9e13-f8c577e7a31e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.Navbar_searchBarContainer__3UbnF .Navbar_searchBarInput__w8FwI",
+      "targets": [
+        ["css=.Navbar_searchBarContainer__3UbnF .Navbar_searchBarInput__w8FwI", "css:finder"],
+        ["xpath=//input[@value='harry potter']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e9d7d754-593a-44c9-b894-a20f4c745afc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SearchList_bookTitle__1wo4a",
+      "targets": [
+        ["css=.SearchList_bookTitle__1wo4a", "css:finder"],
+        ["xpath=//div[@id='root']/div[2]/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c0cc4bc7-1015-4a9d-b156-edd259fd4ea0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ed863809-5e6d-4bcf-bb07-a995082d64cc"]
+  }],
+  "urls": ["https://cover-bookstore.onrender.com/"],
+  "plugins": []
+}
